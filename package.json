@@ -1,0 +1,25 @@
+{
+  "name": "twitter-interface",
+  "version": "0.1.0",
+  "description": "twitter interface project for Treehouse's Full Stack JavaScript Techdegree",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhnnyk/twitter-interface.git"
+  },
+  "keywords": [
+    "twitter",
+    "node",
+    "express",
+    "API"
+  ],
+  "author": "John Knotts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jhnnyk/twitter-interface/issues"
+  },
+  "homepage": "https://github.com/jhnnyk/twitter-interface#readme"
+}
