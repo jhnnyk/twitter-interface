@@ -4,7 +4,8 @@
   "description": "twitter interface project for Treehouse's Full Stack JavaScript Techdegree",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
   },
   "repository": {
     "type": "git",

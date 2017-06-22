@@ -1,7 +1,8 @@
 'use strict'
 
 const express = require('express')
-const config = require('./config')
+const path = require('path')
+const config = require(path.join(__dirname, 'config'))
 const Twit = require('twit')
 const T = new Twit(config)
 
