@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/jhnnyk/twitter-interface#readme",
   "dependencies": {
+    "express": "^4.15.3",
     "twit": "^2.2.9"
   }
 }
