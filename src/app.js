@@ -13,15 +13,13 @@ app.use('/static', express.static(__dirname + '/public'))
 app.set('view engine', 'pug')
 app.set('views', __dirname + '/views')
 
-//
-//  search twitter for all tweets containing the word 'banana' since July 11, 2011
-//
-T.get('search/tweets', { q: 'banana since:2011-07-11', count: 100 }, function (err, data, response) {
-  console.log(data)
+const tweets = T.get('statuses/home_timeline', { count: 5 }, (err, data, res) => {
+  data
 })
 
-app.get('/', (req, res) => {
-  res.render('index')
+app.get('/', (req, res, next) => {
+  const timeLine = tweets._rejectionHandler0.data
+  res.render('index', {tweets: timeLine})
 })
 
 app.listen(3000, () => {
