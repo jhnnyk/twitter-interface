@@ -14,7 +14,7 @@ app.set('view engine', 'pug')
 app.set('views', __dirname + '/views')
 
 const tweets = T.get('statuses/home_timeline', { count: 5 }, (err, data, res) => {
-  data
+  return data
 })
 
 app.get('/', (req, res, next) => {
